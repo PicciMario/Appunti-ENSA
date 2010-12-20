@@ -1,0 +1,141 @@
+%===========================================================================
+% SIMBOLI SISTEMA
+%===========================================================================
+% 1: scritta a sinistra
+% 2: scritta dentro il box
+% 3: scritta a destra
+%===========================================================================
+
+\newcommand{\SISTEMA}[3]
+{
+	\begin{center}
+	\begin{picture}(270,40)
+		%box
+		\put(100,5){\line(1,0){80}}
+		\put(180,5){\line(0,1){30}}
+		\put(180,35){\line(-1,0){80}}
+		\put(100,35){\line(0,-1){30}}
+		%contenuto box
+		\put(110,17){#2}
+		%frecce
+		\put(80,20){\vector(1,0){20}}
+		\put(180,20){\vector(1,0){20}}
+		%testo sinistra e destra
+		\put(40,20){#1}
+		\put(210,20){#3}
+	\end{picture}
+	\end{center}
+}
+
+%===========================================================================
+% SIMBOLI SISTEMA SERIE
+%===========================================================================
+% 1: ingresso
+% 2: scritta dentro il primo box
+% 3: segnale intermedio
+% 4: scritta dentro il secondo box
+% 5: uscita
+%===========================================================================
+
+\newcommand{\SISTEMASERIE}[5]
+{
+	\begin{center}
+	\begin{picture}(300,40)
+		%box1
+		\put(50,5){\line(1,0){70}}
+		\put(120,5){\line(0,1){30}}
+		\put(120,35){\line(-1,0){70}}
+		\put(50,35){\line(0,-1){30}}
+		%box2
+		\put(180,5){\line(1,0){70}}
+		\put(250,5){\line(0,1){30}}
+		\put(250,35){\line(-1,0){70}}
+		\put(180,35){\line(0,-1){30}}
+		%frecce
+		\put(30,20){\vector(1,0){20}}
+		\put(120,20){\vector(1,0){60}}
+		\put(250,20){\vector(1,0){20}}
+		%ingresso
+		\put(5,17){#1}
+		%testo 1 box
+		\put(60,17){#2}
+		%segnale intermedio
+		\put(140,28){#3}
+		%testo 2 box
+		\put(190,17){#4}
+		%uscita
+		\put(280,17){#5}
+	\end{picture}
+	\end{center}
+}
+
+%===========================================================================
+% SIMBOLI SISTEMA PARALLELO
+%===========================================================================
+% 1: ingresso
+% 2: scritta dentro il primo box
+% 3: segnale intermedio primo box
+% 4: scritta dentro il secondo box
+% 5: segnale intermedio secondo box
+% 6: uscita
+%===========================================================================
+
+\newcommand{\SISTEMAPARALLELO}[6]
+{
+	\begin{center}
+	\begin{picture}(260,100)
+		%box1
+		\put(80,5){\line(1,0){70}}
+		\put(150,5){\line(0,1){30}}
+		\put(150,35){\line(-1,0){70}}
+		\put(80,35){\line(0,-1){30}}
+		%box2
+		\put(80,45){\line(1,0){70}}
+		\put(150,45){\line(0,1){30}}
+		\put(150,75){\line(-1,0){70}}
+		\put(80,75){\line(0,-1){30}}
+		%frecce
+			%freccia sopra sinistra
+			\put(40,60){\vector(1,0){40}}
+			%freccia sotto sinistra
+			\put(50,20){\vector(1,0){30}}
+			%linea sinistra verso il basso
+			\put(50,60){\line(0,-1){40}}
+			%freccia uscita box1
+			\put(150,60){\vector(1,0){56}}
+			%linea uscita box2
+			\put(150,20){\line(1,0){60}}
+			%freccia destra verso l'alto
+			\put(210,20){\vector(0,1){36}}
+			%freccia uscita
+			\put(214,60){\vector(1,0){20}}
+		%simbolo somma
+		\put(210,60){\circle{8}}
+		%ingresso
+		\put(10,57){#1}
+		%testo 1 box
+		\put(90,57){#2}
+		%segnale intermedio 1
+		\put(160,70){#3}
+		%testo 2 box
+		\put(90,17){#4}
+		%segnale intermedio 2
+		\put(160,30){#5}
+		%uscita
+		\put(240,57){#6}
+	\end{picture}
+	\end{center}
+}
+
+
+%===========================================================================
+% SIMBOLI NUOVI
+%===========================================================================
+
+\newcommand{\sinc}[0]{\mbox{sinc}}
+\newcommand{\tri}[0]{\mbox{tri}}
+\newcommand{\rect}[0]{\mbox{rect}}
+\newcommand{\DTFT}[0]{\mbox{DTFT}}
+\newcommand{\DFT}[0]{\mbox{DFT}}
+\newcommand{\convcirc}[0]{\otimes}
+\newcommand{\trasfz}[0]{\stackrel{\mbox{Z}}{\longleftrightarrow}}

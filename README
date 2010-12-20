@@ -1,0 +1,20 @@
+Appunti ENSA
+Trascrizione in LaTeX degli appunti del corso di Elaborazione Numerica Dei Segnali A, tenuto presso la Facoltà di Ingegneria dell'Università degli Studi di Brescia.
+
+Elenco argomenti:
+* Classificazione dei segnali
+* Segnale numerico
+* Sequenze elementari
+* Generazione di sequenze deterministiche
+* Processi casuali
+* Generazione di sequenze pseudo casuali
+* Convoluzione di segnali
+* Crosscorrelazione di sequenze
+* Elaborazione di sequenze numeriche
+* DTFT discrete time Fourier transform
+* Campionamento e ricostruzione
+* Conversione digitale-digitale
+* Trasformata Z
+* DFT discrete Fourier transform
+* Analisi spettrale
+* Script Matlab
